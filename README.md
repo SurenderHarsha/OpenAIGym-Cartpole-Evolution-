@@ -8,3 +8,4 @@ Therefore the maximum reward and steps have been increased to 15000. The reason 
 On performing tests, the Algorithm takes approximately on an average of 75 episodes to converge to a solution of 15000.
 
 It is based on the evolution of weights of a perceptron using genetic algorithms.
+For now to Solve for a score of 195, it takes about 1-40 Episodes randomly.
