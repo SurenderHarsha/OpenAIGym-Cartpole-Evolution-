@@ -9,3 +9,5 @@ On performing tests, the Algorithm takes approximately on an average of 75 episo
 
 It is based on the evolution of weights of a perceptron using genetic algorithms.
 For now to Solve for a score of 195, it takes about 1-40 Episodes randomly.
+
+Just run the program until it says done. it then prints DONE, the weights used to calculate the action, the maximum reward and the number of episodes it took.
