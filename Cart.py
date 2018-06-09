@@ -85,10 +85,10 @@ while True:
                 total_reward+=reward
                 env.render()
             n_pop.append([cand,total_reward])
-            if total_reward>=15000:
+            if total_reward>=195:
                 winner=cand
                 win=1
-                print "DONE:",winner,total_reward
+                print "DONE:",winner,total_reward,ep_no
                 break
 
             env.reset()
@@ -102,7 +102,7 @@ while True:
         best_reward=n_pop[0][1]
         pop=crossover(n_pop)
         pop=mutation(pop)
-        print gen,best_reward,ep_no
+        #print gen,best_reward,ep_no
     else:
         #print "Episodes:",ep_no
         if done==True:
