@@ -13,6 +13,7 @@ reward=0
 pop_size=10
 cr_rate=0.2
 m_rate=1
+Max_reward=195
 def sigmoid(x):
   return round(1 / (1 + math.exp(-x)))
 
@@ -54,7 +55,7 @@ def mutation(po):
         for j in range(len(c)):
             if m_rate>random.randint(0,120):
                 c[j]=np.random.uniform()*2-1
-                print "Mutated"
+                #print "Mutated"
     return po
 
 pop=gen_pop()
@@ -85,7 +86,7 @@ while True:
                 total_reward+=reward
                 env.render()
             n_pop.append([cand,total_reward])
-            if total_reward>=195:
+            if total_reward>=Max_reward:
                 winner=cand
                 win=1
                 print "DONE:",winner,total_reward,ep_no
